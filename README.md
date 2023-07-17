@@ -6,15 +6,6 @@ To test a branch (e.g 0.70), perform the following after launching an android em
 
     git switch 0.70
     yarn install
-    cd android
-    gradlew :app:installDebug
-    adb shell am start -n "com.rasaha91.rnbottomsheet/com.rasaha91.rnbottomsheet.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
-
-Once the app is showing, start the dev server:
-
-    cd ..
-    yarn start
+    npx react-native run-android
 
 In the android app, press the "Show Dialog" button and observe the size of the bottom sheet dialog that shows.
-
-
