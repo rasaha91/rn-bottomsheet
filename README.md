@@ -9,3 +9,9 @@ To test a branch (e.g 0.70), perform the following after launching an android em
     npx react-native run-android
 
 In the android app, press the "Show Dialog" button and observe the size of the bottom sheet dialog that shows.
+
+To test a release build with a release bundle (no dev server), run:
+
+    npx react-native run-android --mode release
+
+instead.
